@@ -60,6 +60,8 @@ jobs:
         df -hT $PWD
         export
         cmake --version
+        cd /usr/local/bin
+        ls
         cmake/gcc/g++ --version
         git clone $REPO_URL -b $REPO_BRANCH openwrt
         ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
